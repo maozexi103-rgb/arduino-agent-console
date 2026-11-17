@@ -1,0 +1,5 @@
+{
+  "workspace_path": "/absolute/path/to/your/project",
+  "codex_app_path": "/Applications/Codex.app",
+  "serial_port": "/dev/cu.usbmodemYOUR_DEVICE"
+}

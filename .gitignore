@@ -1,0 +1,12 @@
+/.build/
+/dist/
+*.app/
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+config.json
+*.log
+*.jsonl
+*.sqlite*
+*.local.*

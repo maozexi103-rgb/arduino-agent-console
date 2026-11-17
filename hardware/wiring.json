@@ -1,0 +1,117 @@
+{
+  "board": "Arduino UNO R3",
+  "buttons": [
+    {
+      "id": "B1",
+      "label": "Start/stop dictation",
+      "pin": 8,
+      "rows": [
+        5,
+        7
+      ],
+      "signal_hole": "d5",
+      "ground_hole": "j7",
+      "ground_to": "b28"
+    },
+    {
+      "id": "B2",
+      "label": "Open a new project chat",
+      "pin": 9,
+      "rows": [
+        10,
+        12
+      ],
+      "signal_hole": "d10",
+      "ground_hole": "j12",
+      "ground_to": "c28"
+    },
+    {
+      "id": "B3",
+      "label": "Cancel dictation / clear draft",
+      "pin": 11,
+      "rows": [
+        14,
+        16
+      ],
+      "signal_hole": "d14",
+      "ground_hole": "j16",
+      "ground_to": "d28"
+    },
+    {
+      "id": "B4",
+      "label": "Toggle Dot live call",
+      "pin": 12,
+      "rows": [
+        18,
+        20
+      ],
+      "signal_hole": "d18",
+      "ground_hole": "j20",
+      "ground_to": "a29"
+    }
+  ],
+  "leds": [
+    {
+      "id": "RED",
+      "label": "Needs attention",
+      "pin": 2,
+      "feed": "j19",
+      "resistor": [
+        "i19",
+        "i21"
+      ],
+      "anode": "h21",
+      "cathode": "h22",
+      "ground_hole": "g22",
+      "ground_to": "b29",
+      "color": "#df424b"
+    },
+    {
+      "id": "YELLOW",
+      "label": "Running",
+      "pin": 3,
+      "feed": "j23",
+      "resistor": [
+        "i23",
+        "i25"
+      ],
+      "anode": "h25",
+      "cathode": "h26",
+      "ground_hole": "g26",
+      "ground_to": "c29",
+      "color": "#d99a13"
+    },
+    {
+      "id": "GREEN",
+      "label": "Turn ended / idle",
+      "pin": 4,
+      "feed": "j27",
+      "resistor": [
+        "i27",
+        "i29"
+      ],
+      "anode": "h29",
+      "cathode": "h30",
+      "ground_hole": "g30",
+      "ground_to": "d29",
+      "color": "#299b68"
+    }
+  ],
+  "resistance_ohms": 220,
+  "ground": {
+    "feed": "a28",
+    "bridge": [
+      "e28",
+      "e29"
+    ]
+  },
+  "schema_version": 1,
+  "notes": [
+    "Buttons use INPUT_PULLUP, released HIGH and pressed LOW.",
+    "Rows connect a-e and f-j separately. The centre trench remains isolated.",
+    "Join e28 to e29 to share the two left-hand ground groups.",
+    "Each LED has its own 220-ohm series resistor.",
+    "No breadboard power rails or separate UNO 5V wire are needed.",
+    "Ground returns in the overview drawing are grouped as one node for readability."
+  ]
+}

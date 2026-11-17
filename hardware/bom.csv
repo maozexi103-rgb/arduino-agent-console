@@ -1,0 +1,10 @@
+component,quantity,notes
+Arduino UNO R3,1,ATmega328P board with USB data connection
+Solderless breadboard,1,30 rows with separate a-e and f-j banks
+Normally open tactile switch,4,Four-pin switches spanning the centre trench
+Red LED,1,Two-pin LED
+Yellow LED,1,Two-pin LED
+Green LED,1,Two-pin LED
+220 ohm resistor,3,One series resistor per LED
+Jumper wire,16,Minimum logical connections including the ground bridge
+USB data cable,1,UNO USB-B to a compatible Mac port or data adapter
